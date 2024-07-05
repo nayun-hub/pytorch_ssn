@@ -15,6 +15,8 @@ import scipy.io as scio
 from connectivity import enforce_connectivity
 os.environ['CUDA_VISIBLE_DEVICES']='0'
 
+
+
 def compute_spixels(num_spixel, num_steps, pre_model, out_folder):
 
     if not os.path.exists(out_folder):

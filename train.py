@@ -9,7 +9,7 @@ import torch
 import os
 import time
 import logging
-from tensorboardX import SummaryWriter
+# from tensorboardX import SummaryWriter
 os.environ['CUDA_VISIBLE_DEVICES']='0,1,2,3,4,5,6,7'
 
 class loss_logger():
@@ -111,8 +111,8 @@ def main():
     parser.add_argument('--root_dir', type=str, default='/home/yc/ssn_superpixels/data')
 
     var_args = parser.parse_args()
-    writer = SummaryWriter('log')
-    train_net(var_args, writer)
+    # writer = SummaryWriter('log')
+    # train_net(var_args, writer)
 
 if __name__ == '__main__':
     main()
